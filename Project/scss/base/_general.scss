@@ -1,0 +1,20 @@
+.clearfix::after,
+.clearfix::before{
+
+    content:"";
+        clear: both;
+        display: table;
+
+}
+
+//Fonts
+$primary-font: 'Niramit';
+$secondary-font: 'Montserrat';
+// Styles
+$primary-color:#f5f5f0;
+$text-color: black;
+$btn-color: white;
+$default-color: black;
+$subtitle-color:grey;
+$anim-color: rgb(246, 195, 204);
+

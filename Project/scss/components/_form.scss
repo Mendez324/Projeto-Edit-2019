@@ -1,0 +1,88 @@
+.c-form {
+    width: 700px;
+    margin: 0 auto;
+
+
+    &__fmain {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &__selwrapper {
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    &__topics {
+        margin-bottom: 20px;
+        padding:5px 0;
+        width: 100%;
+    }
+
+    &__inputcontainer {
+        font-size: 0px;
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    &__inpwrapper {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__inpwrapper + &__inpwrapper {
+        padding-left: 10px;
+    }
+
+    &__lbtext {
+        display: flex;
+        font-size: 14px;
+        font-family: $primary-font;
+        margin-bottom: 5px;
+    }
+
+    &__entervalue {
+       margin-bottom: 30px;
+       padding: 10px 60px;
+       display: inline-block;
+       width: 100%;
+    }
+
+    &__textwrapper {
+        text-align: center;
+       
+    }
+
+    &__enterarea {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    
+
+    &__fsubmit {
+        padding: 5px 50px;
+        background: orange;
+        color: white;
+        font-family: $primary-font;
+        margin: 20px;
+        text-decoration: none;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+}

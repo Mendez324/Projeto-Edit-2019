@@ -1,0 +1,71 @@
+.c-category {
+    text-align: center;
+    max-width: 1180px;
+    width:100%;
+    margin: 0 auto;
+    
+
+
+    &__categtitle {
+        text-align: center;
+        font-size: 40px;
+        color: $default-color;
+        margin: 15px 0 5px 0;
+        font-family: $secondary-font;
+        @include mq (0, 768px) {
+            font-size: 25px;
+        }
+    }
+
+    &__categsubt {
+        font-size: 20px;
+        color: #7c7c7c;
+        margin-bottom: 40px;
+        font-family: $secondary-font;
+        padding: 10px;
+        line-height: 30px;
+        @include mq (0, 768px) {
+            font-size: 10px;
+        }
+    }
+
+
+    &__tablerow {
+        width: 100%;
+        font-size: 0px;
+        margin:0 auto;
+    }
+
+    &__tablecoll {
+        width: 25%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    &__img {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    &__description {
+        text-align: center;
+        position: relative;
+        transform: translateY(35px);
+        font-size: 16px;
+        font-family: $primary-font;
+        color: Black;
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        text-align: center;
+        position: relative;
+        transform: translateY(35px);
+        font-size: 14px;
+        margin-bottom: 40px;
+        font-family: $primary-font;
+        color: Black;
+    }
+
+}

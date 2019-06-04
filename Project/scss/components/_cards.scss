@@ -1,0 +1,103 @@
+// these are prototype cards
+
+
+
+.c-card {
+  max-width: 1280px;
+  width:100%;
+  margin:0 auto;
+  height:885px;
+  font-size:0;
+  @include mq (0, 668px) {
+    height: auto;
+  }
+  @include mq (668px, 1024px) {
+    height: auto;
+  }
+
+  
+  
+
+  &__coll {
+    font-size:12px;
+    max-width:25%;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    @include mq (0, 668px) {
+      max-width: 90%;
+      display:block;
+      margin: 0 auto;
+    } 
+    @include mq (668px, 1024px) {
+      max-width: 50%;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__square {
+    height:295px;
+    width:100%;
+    color: black;
+    &.big {
+      height:590px;
+      background: $anim-color;
+      
+     }
+    &--light-medium {
+      background: $anim-color;
+    }
+
+  }
+
+
+
+  &__squaretext {
+    position:relative;
+    top:50%;
+    transform:translatey(-50%);
+    width:100%;
+    margin:0 auto;
+  }
+
+    
+  &__img-clothes {
+    width: 100%;
+    height: 295px;
+    display: block;
+    &:hover {
+      box-shadow: 7px 9px 36px 0px rgba(0,0,0,0.75);
+    }
+  }
+
+  &__img-clothes-big {
+    width: 100%;
+    height: 590px;
+    display: block;
+    &:hover {
+      box-shadow: 7px 9px 36px 0px rgba(0,0,0,0.75);
+    }
+  }
+
+
+  &__pdtinfo {
+    font-family: $primary-font;
+    color: $text-color;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__text {
+    color: $text-color;
+    font-family: $secondary-font;
+    height: 15px;
+    text-align: center;
+  }
+
+
+  
+  
+}

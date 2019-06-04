@@ -1,0 +1,68 @@
+.c-slider {
+  max-width:1180px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+  @include mq (0,668px){
+    display: none;
+  }
+
+  &__slides {
+    font-size:0;
+    width:2200px;
+    @include mq (0,668px){
+      max-width: 600px;
+    }
+
+  }
+
+  &__slideitem {
+    width:275px;
+    display:inline-block;
+  }
+
+  &__slideimg {
+    width:100%;
+  }
+
+  &__prev {
+    display:block;
+    width:40px;
+    height:187px;
+    background:black;
+    position:absolute;
+    left:0px;
+    top:0;
+    line-height:187px;
+    color: $btn-color;
+    text-decoration:none;
+    text-align:center;
+
+  }
+
+  &__next {
+    display:block;
+    width:40px;
+    height:187px;
+    background:black;
+    position:absolute;
+    right:0px;
+    top:0;
+    line-height:187px;
+    color: $btn-color;
+    text-decoration:none;
+    text-align:center;
+
+  }
+
+
+ 
+
+
+
+
+
+
+
+}
