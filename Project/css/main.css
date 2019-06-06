@@ -271,7 +271,7 @@ html, body {
           top: -10px; } }
 
 .c-card {
-  max-width: 1280px;
+  max-width: 1380px;
   width: 100%;
   margin: 0 auto;
   height: 885px;
@@ -303,8 +303,7 @@ html, body {
     width: 100%;
     color: black; }
     .c-card__square.big {
-      height: 590px;
-      background: white; }
+      height: 590px; }
     .c-card__square--light-medium {
       background: #f6c3cc; }
   .c-card__squaretext {
@@ -313,19 +312,20 @@ html, body {
     -webkit-transform: translatey(-50%);
     -ms-transform: translatey(-50%);
     transform: translatey(-50%);
-    width: 100%;
-    margin: 0 auto; }
+    font-size: 0; }
   .c-card__img-clothes {
     width: 100%;
     height: 295px;
     display: block;
+    border-radius: 10px;
     /*&.higher {
       height: 590px;
     }
     */ }
     .c-card__img-clothes:hover {
-      -webkit-box-shadow: 7px 9px 36px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 7px 9px 36px 0px rgba(0, 0, 0, 0.75); }
+      -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
   .c-card__img-iconcard {
     width: 30%;
     display: block;
@@ -341,14 +341,21 @@ html, body {
     font-family: "Niramit";
     color: black;
     font-size: 25px;
-    margin-bottom: 5px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    width: 100%; }
+    border: 0.5px solid #5a5656;
+    border-radius: 7px; }
   .c-card__text {
+    font-size: 15px;
+    padding: 10px;
     color: black;
     font-family: "Montserrat";
     height: 15px;
-    text-align: center; }
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; }
 
 .c-sign {
   font-family: "Niramit";
@@ -398,7 +405,8 @@ html, body {
     border: 1px;
     text-align: center;
     padding: 10px;
-    font-family: "Niramit"; }
+    font-family: "Niramit";
+    cursor: pointer; }
     @media (min-width: 0) and (max-width: 668px) {
       .c-sign__add {
         width: 250px; } }
@@ -441,7 +449,8 @@ html, body {
   .c-footer__socialicon {
     width: 15%;
     padding: 10px;
-    border: 0.5px solid black; }
+    border: 0.5px solid black;
+    border-radius: 5px; }
   .c-footer__sicon {
     width: 40%;
     vertical-align: middle; }
@@ -588,8 +597,9 @@ html, body {
     color: black; }
 
 .c-slider {
-  max-width: 1180px;
+  max-width: 1380px;
   width: 100%;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
   position: relative; }

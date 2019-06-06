@@ -59,6 +59,7 @@
         text-align: center;
         padding: 10px;
         font-family: $primary-font;
+        cursor: pointer;
         @include mq (0, 668px){
          width:250px;
         }

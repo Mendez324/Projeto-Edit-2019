@@ -1,5 +1,5 @@
 .c-card {
-  max-width: 1280px;
+  max-width: 1380px;
   width:100%;
   margin:0 auto;
   height:885px;
@@ -36,7 +36,6 @@
     
     &.big {
       height:590px;
-      background: white;
     }
     &--light-medium {
       background: $anim-color;
@@ -48,8 +47,7 @@
     position:relative;
     top:50%;
     transform:translatey(-50%);
-    width:100%;
-    margin:0 auto;
+    font-size: 0;
   }
 
     
@@ -57,12 +55,14 @@
     width: 100%;
     height: 295px;
     display: block;
+    border-radius: 10px;
     /*&.higher {
       height: 590px;
     }
     */
     &:hover {
-      box-shadow: 7px 9px 36px 0px rgba(0,0,0,0.75);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      cursor: pointer;
     }
     
   }
@@ -87,16 +87,23 @@
     font-family: $primary-font;
     color: $text-color;
     font-size: 25px;
-    margin-bottom: 5px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    border: 0.5px solid rgb(90, 86, 86);
+    border-radius: 7px;
   }
 
   &__text {
+    font-size: 15px;
+    padding: 10px;
     color: $text-color;
     font-family: $secondary-font;
     height: 15px;
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
   }
 
 
