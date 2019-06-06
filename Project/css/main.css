@@ -304,7 +304,7 @@ html, body {
     color: black; }
     .c-card__square.big {
       height: 590px;
-      background: #f6c3cc; }
+      background: white; }
     .c-card__square--light-medium {
       background: #f6c3cc; }
   .c-card__squaretext {
@@ -318,10 +318,18 @@ html, body {
   .c-card__img-clothes {
     width: 100%;
     height: 295px;
-    display: block; }
+    display: block;
+    /*&.higher {
+      height: 590px;
+    }
+    */ }
     .c-card__img-clothes:hover {
       -webkit-box-shadow: 7px 9px 36px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 7px 9px 36px 0px rgba(0, 0, 0, 0.75); }
+  .c-card__img-iconcard {
+    width: 30%;
+    display: block;
+    margin: 0 auto; }
   .c-card__img-clothes-big {
     width: 100%;
     height: 590px;
@@ -708,11 +716,13 @@ html, body {
     width: 100%; }
   .c-form__fsubmit {
     padding: 5px 50px;
-    background: orange;
-    color: white;
+    border: 0.5px solid grey;
+    color: black;
     font-family: "Niramit";
     margin: 20px;
     text-decoration: none; }
+    .c-form__fsubmit:hover {
+      background: #f6c3cc; }
 
 .c-shop {
   max-width: 1280px;
@@ -819,6 +829,12 @@ html, body {
     background-repeat: no-repeat;
     border: 0.5px solid grey;
     position: relative; }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      .c-gallery__wrapper {
+        max-width: 100%; } }
+    @media (min-width: 0) and (max-width: 668px) {
+      .c-gallery__wrapper {
+        max-width: 90%; } }
   .c-gallery__gal-list {
     position: absolute;
     right: 20px;

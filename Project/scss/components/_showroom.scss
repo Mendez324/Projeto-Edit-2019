@@ -11,6 +11,12 @@
         background-repeat:no-repeat;
         border: 0.5px solid grey;
         position:relative;
+        @include mq (668px, 1024px) {
+            max-width: 100%;
+        }
+        @include mq (0, 668px) {
+            max-width: 90%;
+        }
     }
 
     &__gal-list {
