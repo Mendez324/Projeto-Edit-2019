@@ -18,7 +18,7 @@
     width:100%;
     display:inline-block;
     vertical-align:top;
-    @include background-gradient ($anim-color,$primary-color, horizontal);
+    @include background-gradient ($anim-color,$primary-color, vertical);
     @include mq (0, 668px) {
       max-width: 90%;
       display:block;
@@ -38,7 +38,7 @@
     
     &.big {
       height:590px;
-      //border: 0 0.3px 0 0.3px solid grey;
+      
       
     }
   
@@ -57,7 +57,6 @@
     object-fit: cover;
     width: 100%;
     height: 295px;
-    //display: block;
     &.higher {
       object-fit: cover;
       height: 590px;
