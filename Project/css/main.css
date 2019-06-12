@@ -755,7 +755,8 @@ html, body {
         display: block;
         text-align: center;
         width: 100%;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        border-bottom: 3px solid black; } }
   .c-shop__head {
     line-height: normal;
     text-transform: uppercase;
@@ -770,14 +771,6 @@ html, body {
     font-size: 14px;
     vertical-align: middle;
     font-family: "Montserrat"; }
-    @media (min-width: 0) and (max-width: 768px) {
-      .c-shop__row-item {
-        font-size: 10px;
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        border-bottom: 0.5px solid grey; } }
     .c-shop__row-item:nth-of-type(1) {
       width: 20%; }
     .c-shop__row-item:nth-of-type(2) {
@@ -794,6 +787,13 @@ html, body {
     .c-shop__row-item:nth-of-type(7) {
       width: 10%;
       text-align: center; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-shop__row-item {
+        width: 100% !important;
+        font-size: 24px;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 0.5px solid grey; } }
   .c-shop__row-item-img {
     width: 40%;
     height: 100px;

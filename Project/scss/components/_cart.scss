@@ -17,6 +17,7 @@
         text-align: center;
         width: 100%;
         margin: 0 auto;
+        border-bottom: 3px solid black;
         
       }
       
@@ -37,19 +38,11 @@
 
     
     &__row-item {
-      display:inline-block;
-      font-size:14px;
+      display: inline-block;
+      font-size: 14px;
       vertical-align:middle;
       font-family: $secondary-font;
-      @include mq(0, 768px) {
-        font-size:10px;
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        border-bottom: 0.5px solid grey;
-        
-      }
+      
       &:nth-of-type(1) {
         width:20%;
       }
@@ -77,6 +70,15 @@
       &:nth-of-type(7) {
         width:10%;
         text-align:center;
+      }
+
+      @include mq(0, 768px) {
+        width: 100% !important;
+        font-size: 24px;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 0.5px solid grey;
+        
       }
         
       
