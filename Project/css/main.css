@@ -513,6 +513,13 @@ html, body {
     margin-bottom: 40px;
     font-family: "Niramit";
     color: Black; }
+  .c-category__category-end {
+    text-align: center;
+    font-family: "Montserrat";
+    color: grey;
+    font-size: 30px;
+    margin: 30px;
+    padding: 15px; }
 
 .c-description {
   margin: 0 auto; }
@@ -783,7 +790,8 @@ html, body {
     .c-shop__row-item:nth-of-type(5) {
       width: 10%; }
     .c-shop__row-item:nth-of-type(6) {
-      width: 10%; }
+      width: 10%;
+      text-align: center; }
     .c-shop__row-item:nth-of-type(7) {
       width: 10%;
       text-align: center; }
@@ -793,8 +801,63 @@ html, body {
         font-size: 24px;
         display: block;
         margin: 0 auto;
-        border-bottom: 0.5px solid grey; } }
+        border-bottom: 0.5px solid grey;
+        padding: 10px; } }
+  @media (min-width: 0) and (max-width: 768px) {
+    .c-shop__product:nth-of-type(1) {
+      margin-top: 5px; } }
+  .c-shop__qty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    margin: 0 auto; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-shop__qty {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 30%; } }
+  .c-shop__qty-number {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    font-size: 16px;
+    font-family: "Niramit";
+    margin-right: 5px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-shop__qty-number {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+  .c-shop__counter {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    width: 40%; }
+  .c-shop__increment {
+    font-size: 12px;
+    background: black;
+    color: white;
+    display: block;
+    margin-bottom: 2px;
+    padding: 5px;
+    width: 20px;
+    text-align: center; }
+  .c-shop__decrement {
+    font-size: 12px;
+    background: black;
+    color: white;
+    display: block;
+    margin-bottom: 2px;
+    padding: 5px;
+    width: 20px;
+    text-align: center; }
   .c-shop__row-item-img {
+    -o-object-fit: cover;
+    object-fit: cover;
     width: 40%;
     height: 100px;
     display: block; }
@@ -802,8 +865,9 @@ html, body {
       border: 2px solid #f094d7; }
     @media (min-width: 0) and (max-width: 768px) {
       .c-shop__row-item-img {
+        width: 70%;
         height: auto;
-        width: 100%; } }
+        margin: 0 auto; } }
   .c-shop__totalcost {
     height: 80px;
     line-height: 30px;
@@ -824,6 +888,25 @@ html, body {
       .c-shop__cost-text {
         height: auto;
         width: 100%; } }
+  .c-shop__cartbutton {
+    float: right;
+    padding: 10px 50px;
+    border: 0.5px solid grey;
+    color: white;
+    font-family: "Montserrat";
+    background: black;
+    margin: 20px;
+    text-decoration: none; }
+    .c-shop__cartbutton:hover {
+      background: #f6c3cc; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-shop__cartbutton {
+        float: none; } }
+  .c-shop__return {
+    color: black;
+    font-family: "Niramit";
+    float: left;
+    margin-top: 10px; }
 
 .c-gallery {
   margin: 10px; }

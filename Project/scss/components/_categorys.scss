@@ -68,4 +68,14 @@
         color: Black;
     }
 
+    &__category-end {
+        text-align: center;
+        font-family: $secondary-font;
+        color: grey;
+        font-size: 30px;
+        margin: 30px;
+        padding: 15px;
+
+    }
+
 }
