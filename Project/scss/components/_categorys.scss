@@ -34,12 +34,21 @@
         width: 100%;
         font-size: 0px;
         margin:0 auto;
+        @include mq (0, 768px) {
+           max-width: 90%;
+        }
     }
 
     &__tablecoll {
         width: 25%;
         display: inline-block;
         margin-top: 20px;
+        @include mq (0, 768px) {
+            width: 100%;
+         }
+         @include mq (768px, 1024px) {
+            width: 50%;
+         }
     }
 
     &__img {

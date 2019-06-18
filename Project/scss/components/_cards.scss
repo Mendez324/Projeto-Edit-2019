@@ -23,6 +23,7 @@
       max-width: 90%;
       display:block;
       margin: 0 auto;
+      background: $btn-color;
     } 
     @include mq (668px, 1024px) {
       max-width: 50%;
@@ -38,11 +39,7 @@
     
     &.big {
       height:590px;
-      
-      
     }
-  
-
   }
 
   &__squaretext {

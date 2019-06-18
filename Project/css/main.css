@@ -297,7 +297,8 @@ html, body {
       .c-card__coll {
         max-width: 90%;
         display: block;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        background: white; } }
     @media (min-width: 668px) and (max-width: 1024px) {
       .c-card__coll {
         max-width: 50%;
@@ -486,10 +487,19 @@ html, body {
     width: 100%;
     font-size: 0px;
     margin: 0 auto; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-category__tablerow {
+        max-width: 90%; } }
   .c-category__tablecoll {
     width: 25%;
     display: inline-block;
     margin-top: 20px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-category__tablecoll {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .c-category__tablecoll {
+        width: 50%; } }
   .c-category__img {
     width: 100%;
     padding: 10px; }
