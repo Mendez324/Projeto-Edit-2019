@@ -4,14 +4,13 @@
   margin:0 auto;
   height:885px;
   font-size:0;
-  
   @include mq (0, 668px) {
     height: auto;
   }
   @include mq (668px, 1024px) {
     height: auto;
   }
-
+  //Style on each column with pink color gradient
   &__coll {
     font-size:12px;
     max-width:25%;
@@ -49,7 +48,7 @@
     font-size: 0;
   }
 
-    
+   // images on the cards properties with shadow efect on hover 
   &__img-clothes {
     object-fit: cover;
     width: 100%;
@@ -81,7 +80,7 @@
     }
   }
 
-
+   //text inside some of the cards
   &__pdtinfo {
     font-family: $primary-font;
     color: $text-color;

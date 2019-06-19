@@ -14,7 +14,7 @@
             max-width: 90%;
         }
     }
-
+    //background img for gallery
     &__gal-background {
         object-fit: cover;
         width: 100%;
@@ -23,7 +23,7 @@
         
 
     }
-
+    //secondary yellow images on top of the bckgrnd one
     &__gal-list {
         position:absolute;
         right:20px;

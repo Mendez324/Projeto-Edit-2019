@@ -79,7 +79,8 @@ html, body {
   .c-hero__title {
     font-size: 80px;
     color: black;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #f6c3cc, 0 0 15px #f6c3cc, 0 0 20px #f6c3cc, 0 0 40px #f6c3cc, 0 0 60px #f6c3cc, 0 0 10px #f6c3cc, 0 0 98px #f6c3cc; }
     @media (min-width: 0) and (max-width: 668px) {
       .c-hero__title {
         font-size: 50px;
@@ -163,10 +164,16 @@ html, body {
     padding: 10px; }
     @media (min-width: 0) and (max-width: 668px) {
       .c-mmenu__burguer-container {
-        width: 100%; } }
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
     @media (min-width: 668px) and (max-width: 1024px) {
       .c-mmenu__burguer-container {
-        width: 100%; } }
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
   .c-mmenu__navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,14 +675,23 @@ html, body {
     max-width: 1100px;
     margin: 0 auto;
     font-size: 0; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-about__wrapper {
+        max-width: 90%; } }
   .c-about__artig {
     font-size: 12px;
     display: inline-block;
     width: calc(50% - 10px); }
     .c-about__artig:nth-of-type(1) {
       margin-right: 20px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .c-about__artig {
+        width: 100%; } }
   .c-about__artimg {
-    width: 100%; }
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 774px;
+    width: 540px; }
   .c-about__arttitle {
     display: block;
     margin: 20px 0;
@@ -739,7 +755,7 @@ html, body {
     margin-bottom: 5px; }
   .c-form__entervalue {
     margin-bottom: 30px;
-    padding: 10px 60px;
+    padding: 10px;
     display: inline-block;
     width: 100%; }
   .c-form__textwrapper {

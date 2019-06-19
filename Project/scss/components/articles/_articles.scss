@@ -6,6 +6,9 @@
         max-width:1100px;
         margin:0 auto;
         font-size:0;
+        @include mq (0 ,768px) {
+            max-width: 90%;
+        }
 
     }
 
@@ -16,10 +19,15 @@
         &:nth-of-type(1) {
         margin-right:20px;
       }
+      @include mq (0, 768px) {
+          width: 100%;
+      }
     }
 
     &__artimg {
-        width: 100%;
+        object-fit: cover;
+        height: 774px;
+        width: 540px;
     }
 
     &__arttitle {
@@ -40,6 +48,8 @@
         
         
     }
+
+    // makes the first letter of the text bigger and with style
     &__arttext::first-letter {
         font-size: calc(25px + 0.75vw);
         line-height: 20px;

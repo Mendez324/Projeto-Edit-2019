@@ -45,9 +45,11 @@
         padding: 10px;
         @include mq(0, 668px) {
             width: 100%;
+            justify-content: center;
         }
         @include mq(668px, 1024px) {
             width: 100%;
+            justify-content: center;
         }
     }
 
@@ -59,6 +61,7 @@
         vertical-align:middle;
         width:100%;
         padding: 15px;
+        // Propriedades do menu assim que click no burguer
         @include mq (0,668px) {
             transition:all 0.4s ease-in-out;
             position:absolute;
