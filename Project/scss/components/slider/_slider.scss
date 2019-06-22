@@ -29,32 +29,26 @@
 
   &__prev {
     display:block;
-    width:40px;
-    height:187px;
-    background:black;
+    width:50px;
+    height:50px;
     position:absolute;
     left:0px;
-    top:0;
+    top:68.5px;
     line-height:187px;
-    color: $btn-color;
-    text-decoration:none;
-    text-align:center;
-
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82095/arrow-left-translucent.png); 
+    background-size:100% 100%;
   }
 
   &__next {
     display:block;
-    width:40px;
-    height:187px;
-    background:black;
+    width:50px;
+    height:50px;
     position:absolute;
     right:0px;
-    top:0;
+    top:68.5px;
     line-height:187px;
-    color: $btn-color;
-    text-decoration:none;
-    text-align:center;
-
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82095/arrow-right-translucent.png); 
+    background-size:100% 100%;
   }
 
 

@@ -1,0 +1,55 @@
+<section class="c-ship  clearfix">
+    <form action="submit" class="c-ship__shippingf">
+        <div class=" c-ship__shipment-selection"> 
+            <label for="topic" class="c-ship__shiptopic">Shipment Option</label>
+        <select id="topic" name="topic" class="c-ship__ship-options" required>
+            <option value="1">DHL- Inernational- 17€</option>
+            <option value="2">Priority Line - 20€</option>
+            <option value="3">Flying Seagulls Carrying it!!</option>
+        </select>
+        </div> 
+        <div class="c-ship__shipment-container clearfix">
+            <div class=" c-ship__ship-wrapper ">   
+                <label for="username" class="c-ship__shiptopic">First Name</label>
+                <input id="username" type="text" name="username" class="c-ship__ship-value" required>
+            </div>
+            <div class=" c-ship__ship-wrapper ">
+                <label for="lastname" class="c-ship__shiptopic">Last Name</label>
+                <input id="lastname" type="text" name="lastname" class="c-ship__ship-value" required>
+            </div>
+        </div>
+        
+        <div class=" c-ship__addresses ">
+            <label for="address" class="c-ship__shiptopic">Address (1º line)</label>
+            <input id="address" type="text" name="address" class="c-ship__ship-address" required>
+        </div>
+        <div class=" c-ship__addresses ">
+            <label for="address" class="c-ship__shiptopic">Address (2º line)</label>
+            <input id="address" type="text" name="address" class="c-ship__ship-address" required>
+        </div>
+        
+        <div class="c-ship__shipment-container clearfix">
+            <div class=" c-ship__ship-wrapper ">   
+                <label for="city" class="c-ship__shiptopic">City</label>
+                <input id="city" type="text" name="country" class="c-ship__ship-value" required>
+            </div>
+            <div class=" c-ship__ship-wrapper ">
+                <label for="country" class="c-ship__shiptopic">Postal Code </label>
+                <input id="country" type="text" name="country" class="c-ship__ship-value" required>
+            </div>
+        </div>
+        <div class="c-ship__shipment-container clearfix">
+            <div class=" c-ship__ship-wrapper ">   
+                <label for="city" class="c-ship__shiptopic">Phone Number</label>
+                <input id="city" type="text" name="country" class="c-ship__ship-value" required>
+            </div>
+            <div class=" c-ship__ship-wrapper ">
+                <label for="country" class="c-ship__shiptopic">E-mail</label>
+                <input id="country" type="text" name="country" class="c-ship__ship-value" required>
+            </div>
+        </div>
+        <input class="c-ship__ship-check" type="checkbox" name="checkedship" value="checkedship">
+        <label class="c-ship__shiptopic">Use this for Billing Purposes</label>
+        
+    </form>
+</section>

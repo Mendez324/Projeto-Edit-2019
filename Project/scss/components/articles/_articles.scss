@@ -6,6 +6,7 @@
         max-width:1100px;
         margin:0 auto;
         font-size:0;
+        height: auto;
         @include mq (0 ,768px) {
             max-width: 90%;
         }
@@ -14,20 +15,36 @@
 
     &__artig {
         font-size:12px;
-        display:inline-block;
+        float: left;
         width:calc(50% - 10px);
         &:nth-of-type(1) {
         margin-right:20px;
-      }
-      @include mq (0, 768px) {
-          width: 100%;
-      }
+        }
+      @include mq (0, 668px) {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        }
+      @include mq (668px, 1086px) {
+        width: 90%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        
+        }
     }
 
     &__artimg {
         object-fit: cover;
         height: 774px;
         width: 540px;
+        @include mq (320px ,1086px) {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        
     }
 
     &__arttitle {
@@ -37,6 +54,9 @@
         color:#000;
         text-transform:uppercase;
         font-family: $primary-font;
+        @include mq (0 ,768px) {
+            text-align: center;
+        }
     }
 
     &__arttext {
@@ -44,6 +64,9 @@
         margin-bottom: 20px;
         font-size: calc(16px + 0.25vw);
         line-height: 1.2;
+        @include mq (0 ,768px) {
+            text-align: center;
+        }
         
         
         

@@ -10,7 +10,7 @@
         text-align: center;
         font-size: 40px;
         color: $default-color;
-        margin: 15px 0 5px 0;
+        margin: 15px 0 10px 0;
         font-family: $secondary-font;
         @include mq (0, 768px) {
             font-size: 25px;

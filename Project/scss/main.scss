@@ -1,6 +1,8 @@
 @import 'base/reset';
 @import 'base/mixinmq';
 @import 'base/general';
+@import 'base/separator';
+@import 'base/404error';
 @import 'components/hero/hero';
 @import 'layout/menu/menu';
 @import 'components/cards/cards';
@@ -14,3 +16,5 @@
 @import 'components/form/form';
 @import 'components/cart/cart';
 @import 'components/showroom/showroom';
+@import 'components/shipping/shipping';
+@import 'components/payment/payment';

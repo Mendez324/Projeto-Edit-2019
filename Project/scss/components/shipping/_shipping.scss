@@ -1,0 +1,88 @@
+.c-ship {
+    width: 700px;
+    margin: 0 auto;
+    @include mq (0 , 668px){
+        max-width: 90%;
+    }
+
+    &__shippingf {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &__shipment-selection {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &__shiptopic {
+        display: flex;
+        font-size: 14px;
+        font-family: $primary-font;
+        margin-bottom: 5px;
+       
+
+    }
+
+    &__ship-options {
+        margin-bottom: 20px;
+        padding:5px 0;
+        width: 100%;
+
+    }
+
+    &__shipment-container {
+        font-size: 0px;
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    &__ship-wrapper {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__ship-wrapper + &__ship-wrapper {
+        padding-left: 10px;
+    }
+// Address Properties
+    &__addresses {
+        margin-bottom: 20px;
+        width: 100%;
+        
+    }
+
+    &__ship-value {
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__ship-address {
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+        
+    }
+
+//----------------------------------------------------------------
+//Check box
+    &__ship-check {
+        float: left;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: 1px solid #BEBEBE;
+        margin-right: 15px;
+        vertical-align: middle;
+        line-height: 15px;
+    }
+
+
+
+
+
+}

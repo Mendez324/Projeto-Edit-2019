@@ -43,6 +43,7 @@
         background:white;
         z-index: 9;
         padding: 10px;
+        // 2 mq because i may in the future want to change stuff on tablet
         @include mq(0, 668px) {
             width: 100%;
             justify-content: center;
@@ -62,6 +63,7 @@
         width:100%;
         padding: 15px;
         // Propriedades do menu assim que click no burguer
+        // 2 mq because i may in the future want to change stuff on tablet
         @include mq (0,668px) {
             transition:all 0.4s ease-in-out;
             position:absolute;
@@ -132,6 +134,7 @@
         margin: 0 auto;
         padding-right: 5px;
         vertical-align:middle;
+        cursor: pointer;
     }
 
     &__iconitem {
@@ -148,6 +151,7 @@
 
     &__mobile-burguer {
         display: none;
+        height: auto;
         @include mq (320px,1024px){
         cursor: pointer;
         display:block;
@@ -167,7 +171,6 @@
         width: 40px;
         margin: 0 auto;
         position: relative;
-        border-radius: 15px;
         &::after,
         &::before {
             content: '';
@@ -176,7 +179,6 @@
             height: 5px;
             width: 40px;
             position: absolute;
-            border-radius: 15px;
         }
         &::after {
             top: 10px;
