@@ -19,26 +19,7 @@
         animation-iteration-count:1;
         animation-timing-function:linear;
     }
-    @keyframes opening {
-        0%{
-          opacity: 0;
-        }
-        
-        25%{
-            opacity: 0.3;
-        }
-        50%{
-            opacity: 0.6;
-        }
-        75%{
-            opacity: 0.8;
-        }
-        100%{
-            opacity: 1;
-        }
-
-
-      }
+    
 
 
     &__title {
@@ -78,10 +59,9 @@
         }
         @include mq (0, 668px) {
          margin: 0 auto;
-         font-size: 24px;
-         padding: 15px;
+         font-size: 14px;
+         padding: 10px;
          width:30%;
-         border-radius: 50px;
          height: 100%;
          
             
