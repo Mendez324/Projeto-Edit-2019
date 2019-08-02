@@ -1,14 +1,15 @@
-
 .c-about {
+    width: 100%;
     margin:50px 0;
 
     &__wrapper {
         max-width:1100px;
         margin:0 auto;
         font-size:0;
-        height: auto;
+        position: relative;
         @include mq (0 ,768px) {
             max-width: 90%;
+            
         }
 
     }
@@ -36,11 +37,12 @@
     }
 
     &__artimg {
-        object-fit: cover;
+        //object-fit: cover;
         height: 774px;
         width: 540px;
         @include mq (320px ,1086px) {
             max-width: 100%;
+            height: auto;
             display: block;
             margin: 0 auto;
         }
@@ -60,6 +62,7 @@
     }
 
     &__arttext {
+        display:block;
         color:#000;
         margin-bottom: 20px;
         font-size: calc(16px + 0.25vw);
