@@ -18,6 +18,18 @@ $default-color: black;
 $subtitle-color:grey;
 $anim-color: rgb(246, 195, 204);
 
+.slick-prev:before {
+  color: black;
+  
+ 
+}
+.slick-next:before {
+  color: black;
+  
+}
+
+
+
 
 @keyframes opening {
     0%{

@@ -63,6 +63,12 @@ html, body {
   clear: both;
   display: table; }
 
+.slick-prev:before {
+  color: black; }
+
+.slick-next:before {
+  color: black; }
+
 @-webkit-keyframes opening {
   0% {
     opacity: 0; }
@@ -763,7 +769,7 @@ html, body {
       background: #f6c3cc; }
 
 .c-slider {
-  max-width: 1380px;
+  max-width: 1300px;
   width: 100%;
   height: 300px;
   margin: 0 auto;
@@ -779,9 +785,11 @@ html, body {
       .c-slider__slides {
         max-width: 600px; } }
   .c-slider__slideitem {
+    margin: 4px;
     display: block;
     width: auto; }
   .c-slider__slideimg {
+    margin: 4px;
     width: 100%; }
 
 .c-about {
@@ -797,20 +805,18 @@ html, body {
         max-width: 90%; } }
   .c-about__artig {
     font-size: 12px;
-    float: left;
+    display: inline-block;
     width: calc(50% - 10px); }
     .c-about__artig:nth-of-type(1) {
       margin-right: 20px; }
     @media (min-width: 0) and (max-width: 668px) {
       .c-about__artig {
         width: 100%;
-        float: none;
         display: block;
         margin: 0 auto; } }
     @media (min-width: 668px) and (max-width: 1086px) {
       .c-about__artig {
         width: 90%;
-        float: none;
         display: block;
         margin: 0 auto; } }
   .c-about__artimg {
@@ -819,7 +825,8 @@ html, body {
     @media (min-width: 320px) and (max-width: 1086px) {
       .c-about__artimg {
         max-width: 100%;
-        height: auto;
+        width: 90%;
+        height: 60%;
         display: block;
         margin: 0 auto; } }
   .c-about__arttitle {

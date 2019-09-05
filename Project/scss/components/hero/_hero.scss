@@ -26,8 +26,6 @@
         font-size: 80px;
         color: $text-color;
         margin-bottom: 20px;
-        //nao ficou tao bem como esperado
-        //text-shadow: 0 0 5px $anim-color, 0 0 15px $anim-color, 0 0 20px $anim-color, 0 0 40px $anim-color, 0 0 60px $anim-color, 0 0 10px $anim-color, 0 0 98px $anim-color;
         @include mq (0, 668px) {
          font-size: 50px;
          text-align: center;

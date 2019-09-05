@@ -1,5 +1,5 @@
 .c-slider {
-  max-width: 1380px;
+  max-width: 1300px;
   width: 100%;
   height: 300px;
   margin:0 auto;
@@ -19,13 +19,17 @@
   }
 
   &__slideitem {
+    margin: 4px;
     display:block;
     width: auto;
   }
 
   &__slideimg {
+    margin: 4px;
     width: 100%;
   }
+
+  
 
   
 

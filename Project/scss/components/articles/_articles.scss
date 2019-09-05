@@ -16,20 +16,18 @@
 
     &__artig {
         font-size:12px;
-        float: left;
+        display: inline-block;
         width:calc(50% - 10px);
         &:nth-of-type(1) {
         margin-right:20px;
         }
       @include mq (0, 668px) {
         width: 100%;
-        float: none;
         display: block;
         margin: 0 auto;
         }
       @include mq (668px, 1086px) {
         width: 90%;
-        float: none;
         display: block;
         margin: 0 auto;
         
@@ -37,12 +35,12 @@
     }
 
     &__artimg {
-        //object-fit: cover;
         height: 774px;
         width: 540px;
         @include mq (320px ,1086px) {
             max-width: 100%;
-            height: auto;
+            width: 90%;
+            height: 60%;
             display: block;
             margin: 0 auto;
         }
