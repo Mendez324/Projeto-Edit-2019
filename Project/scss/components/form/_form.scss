@@ -70,11 +70,11 @@
 
     &__fsubmit {
         padding: 5px 50px;
-        border: 0.5px solid grey;
+        border: 0.5px solid;
         color: $text-color;
         font-family: $primary-font;
         margin: 20px;
-        text-decoration: none;
+        background: white;
         &:hover {
             background: $anim-color;
     

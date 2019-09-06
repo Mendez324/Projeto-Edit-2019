@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $('.c-mmenu__mobile-burguer').click(function(){
+		$(".c-mmenu__espan").toggleClass('cross');
+			
+	});
     
   $('.c-slider__slides').slick({
       centerMode: true,
@@ -29,11 +34,11 @@ $(document).ready(function(){
 
 
   $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
       enabled: true,
       navigateByImgClick: true,
       preload: [0,1] // Will preload 0 - before current, and 1 after the current image
@@ -47,5 +52,34 @@ $(document).ready(function(){
   });
 
 
+  $(".c-form__fsubmit").click (
+    
+    $('.c-form').validate({ 
+      rules: {
+          username: {
+              required: true,
+          },
+          email: {
+              required: true,
+              email: true
+          },
+          city: {
+            required: true
+          },
+          country: {
+            required: true
+          },
+          textarea: {
+            required: true
+          }
+  
+      }
+    })
+  );
+  
 
+  
 });
+
+
+
