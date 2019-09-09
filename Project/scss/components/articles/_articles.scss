@@ -1,17 +1,17 @@
 .c-about {
     width: 100%;
     margin:50px 0;
-
     &__wrapper {
         max-width:1100px;
+        width: 100%;
         margin:0 auto;
         font-size:0;
         position: relative;
+        display: flex;
         @include mq (0 ,768px) {
+            display: block;
             max-width: 90%;
-            
         }
-
     }
 
     &__artig {
@@ -72,7 +72,6 @@
         
         
     }
-
     // makes the first letter of the text bigger and with style
     &__arttext::first-letter {
         font-size: calc(25px + 0.75vw);
@@ -84,13 +83,6 @@
         font-weight: bold;
         font-family: $secondary-font;
         color: $anim-color;
-            
     }
-
-    
-
-
-
-
 
 }

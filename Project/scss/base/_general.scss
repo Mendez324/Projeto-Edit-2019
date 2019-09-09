@@ -1,10 +1,9 @@
 .clearfix::after,
 .clearfix::before{
 
-    content:"";
-        clear: both;
-        display: table;
-
+  content:"";
+    clear: both;
+    display: table;
 }
 
 //Fonts
@@ -17,51 +16,40 @@ $btn-color: white;
 $default-color: black;
 $subtitle-color:grey;
 $anim-color: rgb(246, 195, 204);
-$lineSize: 0.17em;
 
 .slick-prev:before {
   color: black;
-  
- 
 }
 .slick-next:before {
   color: black;
+}
+@keyframes opening {
+  0%{
+    opacity: 0;
+  }
   
+  25%{
+      opacity: 0.3;
+  }
+  50%{
+      opacity: 0.6;
+  }
+  75%{
+      opacity: 0.8;
+  }
+  100%{
+      opacity: 1;
+  }
+
+
 }
 
-
-
-
-@keyframes opening {
-    0%{
-      opacity: 0;
-    }
-    
-    25%{
-        opacity: 0.3;
-    }
-    50%{
-        opacity: 0.6;
-    }
-    75%{
-        opacity: 0.8;
-    }
-    100%{
-        opacity: 1;
-    }
-
-
+@keyframes imgtag {
+  0%{
+    opacity: 0;
   }
-
-  @keyframes imgtag {
-    0%{
-      opacity: 0;
-    }
-    
-    100%{
-        opacity: 0.3;
-   
-
+  
+  100%{
+      opacity: 0.3;
   }
-
 }

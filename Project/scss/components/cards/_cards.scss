@@ -1,5 +1,5 @@
 .c-card {
-  max-width: 1280px;
+  max-width: 1380px;
   width:100%;
   margin:0 auto;
   height:885px;
@@ -17,11 +17,6 @@
     width:100%;
     display:inline-block;
     vertical-align:top;
-    border-radius: 30px;
-    /*
-    tryed a gradient for cards but looks better w/o it i guess
-    @include background-gradient ($anim-color,$primary-color, vertical);
-    */
     @include mq (0, 668px) {
       max-width: 90%;
       display:block;
@@ -57,7 +52,6 @@
     object-fit: cover;
     width: 100%;
     height: 295px;
-    border-radius: 30px;
     animation-name: opening;
     animation-duration: 1s;
     animation-iteration-count:1;
@@ -69,6 +63,7 @@
     
     &:hover {
       box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      transform: translateZ(10px);
       cursor: pointer;
     }
     
@@ -85,7 +80,9 @@
     height: 590px;
     display: block;
     &:hover {
-      box-shadow: 7px 9px 36px 0px rgba(0,0,0,0.75);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      transform: translateZ(10px);
+      cursor: pointer;
     }
   }
 

@@ -1,5 +1,4 @@
 .c-sign {
-    
     font-family: $primary-font;
     color: $text-color;
     text-align: center;
@@ -27,7 +26,6 @@
     }
 
     &__swrapper {
-        
         display: flex;
         width: 500px;
         margin: 0 auto;
@@ -36,10 +34,7 @@
         @include mq (0, 668px){
          width:250px;
          margin-bottom: 0px;
-            
         }
-        
-       
     }
 
     &__istmail {
@@ -63,13 +58,6 @@
         @include mq (0, 668px){
          width:250px;
         }
-        
-        
-        
     }
     
-
-   
-
-
 }

@@ -3,14 +3,10 @@
     font-family: $primary-font;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
     line-height: 50px;
+    z-index: 7;
     font-size: 0;
-    background:white;
     display: flex;
     align-items: center;
-    @include mq (0,668px) {
-        align-items: center;
-        
-    }
     // icon SP de Saltiest Pop
     &__iconlogo {
         width:50px;
