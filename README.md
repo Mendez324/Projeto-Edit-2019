@@ -2,7 +2,9 @@
 Trabalho em desenvolvimento em aula
 
 
-Este trabalho, tal como este repositorio GIT, são o meu primeiro contacto com front-end development
+Este trabalho, tal como este repositorio GIT, são o meu primeiro contacto com front-end development, e simula um e-commerce na qual foi pedido aos alunos para usar as tecnologias html5, sass e jquery.
+Querendo-me destacar organizei o projecto por components utilizando a metodologia BEM na escrita do sass e tive base nos artigos abaixo.
+Os plugins utilizados foram o slick slider para o carrousel, o js.validate para validação do formulario e o magnific popup para na galria a imagem ter destaque na galeria. 
 
 Structure is based on this: https://medium.com/@dannyhuang_75970/sass-project-structure-for-big-projects-8c4a740846ee?fbclid=IwAR1QJLWPLQoXMk_ltwVBRaJs0quWc1op6khUsdTTQ25RlhDev2VJmFvTqiE
 
